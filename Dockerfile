@@ -9,6 +9,9 @@ RUN cp -p /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 RUN yum -y install ntpdate
 RUN ntpdate time.bora.net
 
+# unzip
+RUN yum -y install unzip
+
 # wget
 RUN yum -y install wget
 
