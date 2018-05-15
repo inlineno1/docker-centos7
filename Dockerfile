@@ -1,5 +1,7 @@
 FROM centos:centos7
 
+MAINTAINER Jamse, Lee <inlineno1@gmail.com>
+
 # yum update
 RUN yum -y update
 RUN yum -y install epel-release
