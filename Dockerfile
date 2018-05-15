@@ -6,8 +6,8 @@ RUN yum -y install epel-release
 
 # timezone (Asia/Seoul)
 RUN cp -p /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-RUN yum -y install rdate
-RUN rdate -l time.bora.net
+RUN yum -y install ntpdate
+RUN ntpdate time.bora.net
 
 # wget
 RUN yum -y install wget
