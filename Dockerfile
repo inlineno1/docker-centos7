@@ -6,10 +6,8 @@ MAINTAINER Jamse, Lee <inlineno1@gmail.com>
 RUN yum -y update
 RUN yum -y install epel-release
 
-# timezone (Asia/Seoul)
-RUN cp -p /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+# ntpdate
 RUN yum -y install ntpdate
-RUN ntpdate time.bora.net
 
 # unzip
 RUN yum -y install unzip
